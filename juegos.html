@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>TA TE TI</title>
 </head>
 <body>
     <header>
@@ -24,34 +24,30 @@
         </nav>
     </header>
     <section>
-        <div class="principal">
-            <div class="cuadro2"></div>
-            <h2>Hola! Me llamo Paula</h2>
-            <p class="parrafo">Soy amante del diseño y la informática. <br>A partir del 2022 comencé mis estudios dentro de programación y lo encuentro facinante. <br> Actualmente me desarrollo dentro de lo que es fullStack.</p>
+        <div class="contenedor-intro">
+            <h2 class="titulo-juego">Juego del TA TE TI</h2>
+            <p class="parrafo">Éste juego fue uno de los que mas me gustó realizar ya que y de primera instancia, el juego fue codificado utilizando Python. Actualmente dicho código fue pasado a JavaScript para hacerlo funcional en éste portfolio. <br>El jugador X comienza la partida</p>
         </div>
-        <div class="skills">
-            <h2>Lenguajes trabajados</h2>
-            <div class="etiquetas">
-                <span class="badge text-bg-info">HTML</span>
-                <span class="badge text-bg-info">CSS</span>
-                <span class="badge text-bg-info">JAVASCRIPT</span>
-                <span class="badge text-bg-info">JAVA</span>
-                <span class="badge text-bg-info">SQL</span>
-                <span class="badge text-bg-info">PYTHON</span>
+        <div class="contenedor-juego">
+            <h1 class="intro">TA TE TI</h1>
+            <div id="tablero">
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
+                <div id="casilla"></div>
             </div>
-            <h2>Programas utilizados</h2>
-            <div class="etiquetas">
-                <span class="badge text-bg-info">Visual Studio Code</span>
-                <span class="badge text-bg-info">MySql</span>
-                <span class="badge text-bg-info">NetBeans</span>
-                <span class="badge text-bg-info">IntelliJ</span>
-            </div>
-
-
+            <p id="mensaje"></p>
+            <button type="reset" hidden="hidden" id="reset">REINICIAR PARTIDA</button>
         </div>
     </section>
     <footer>
         <p class="textoFooter">&copy; 2023 Paula M. Domínguez</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

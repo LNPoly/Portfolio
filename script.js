@@ -70,7 +70,7 @@ function chequearVictorias(){
     }
     // Verificar empate
     if (!grilla.includes("") && typeof posicionGanadora === "undefined"){
-            mostrarMensaje.innerHTML = "HAY EMPATE";
+            mostrarMensaje.innerHTML = "¡HAY EMPATE!";
             mostrarBoton();
             return "empate";
     }
