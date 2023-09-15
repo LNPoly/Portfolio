@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/* Config body */
+
+body{
+    background: linear-gradient(to bottom, rgb(75, 108, 164) 0%, rgb(12, 46, 86) 100%);
+    background-image: url(imagenes/hero_fondo.jpg);
+    background-repeat: no-repeat;
+    height: max-content;
+    margin: 0;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    user-select: none;
+    box-sizing:border-box;
+}
+.contenedor{
+    display: flex;
+    margin:25%;
+    justify-content: center;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(12, 47, 86, 0.486);
+    height: 50px;
+    margin: 0;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color:rgb(163, 163, 163);
+    transition: 1s;
+
+}
+li a:hover{
+    /* background-color: rgba(75, 143, 164, 0.5); */
+    color: rgb(12, 46, 86);
+    border-radius: 10px;
+    text-shadow:3px 3px 3px rgb(12, 46, 86);
+    font-size: 25px;
+}
+
+
+/* Estilo del index */
+
+.boton{
+    background-color: rgb(12, 46, 86, 0.5);
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(75, 108, 164);
+    border: 1px rgb(75, 108, 164) solid;
+    transition: 1.5s;
+}
+.boton:hover{
+    background-color: rgb(75, 108, 164, 0.5);
+    color:rgb(12, 46, 86);
+    font-size: 40px;
+    border: 1px rgb(12, 46, 86) solid;
+    border-radius: 20px;
+    box-shadow:3px 9px 9px rgb(12, 46, 86);
+    text-shadow:3px 3px 3px rgb(12, 46, 86);
+}
+
+/* Estilos del home */
+
+
+.principal{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.cuadro2{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-image: url(imagenes/selfie.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow:3px 3px 3px #14023f;
+
+}
+h2{
+    color:rgb(163, 163, 163);
+    font-size: 20px;
+}
+.parrafo{
+    font-size: 20px;
+    color:rgb(163, 163, 163);
+}
+.skills{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.etiquetas{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.badge{
+    background-color:  rgba(12, 47, 86, 0.486);
+    color: rgb(163, 163, 163);
+    margin: 15px 8px 15px 8px;
+    padding: 8px;
+    border-radius: 20px;
+
+}
+
+/* estilos de proyectos.html */
+
+.project {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 20px;
+}
+.titulo,.titulo2,.enlaces{
+    color:rgb(163, 163, 163);
+    text-decoration: none;
+}
+.parrafo2{
+    font-size: 20px;
+    padding: 25px 0 25px;
+    color:rgb(163, 163, 163);
+}
+.project h3 {
+    color: rgb(163, 163, 163);
+
+    text-shadow:3px 3px 3px #14023f ;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+/* estilos juegos */
+
+.contenedor-intro{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.titulo-juego{
+    color: rgb(163, 163, 163);
+    margin-top: 30px;
+}
+
+.contenedor-juego{
+    background-color: black;
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.intro{
+    color:rgb(163, 163, 163);
+    padding-top: 20px;
+}
+#tablero{
+    width: 300px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+}
+#casilla{
+    background-color: rgb(75, 108, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    max-width: 100%;
+    height: 100px;
+    margin: 3px;
+
+    text-align: center;
+    font-size: 8rem;
+    text-shadow:3px 3px 3px #14023f;
+    transition: 0.5s;
+}
+#mensaje{
+    color: rgb(75, 108, 164);
+    padding: 10px;
+}
+#reset{
+    background-color: rgb(75, 108, 164);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #14023f;
+    margin: 0 auto;
+}
+.ganador{
+    box-shadow: 3px 3px 3px rgb(255, 222, 138);
+}
+/* estilo pie de pagina */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100px;
+    color:rgb(163, 163, 163);
+    box-sizing:border-box;
+}
+footer .textoFooter{
+    padding: 5 px;
+
+}
